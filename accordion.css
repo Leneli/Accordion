@@ -1,0 +1,69 @@
+/* DELET! */
+
+body {
+	margin: auto;
+	padding: 50px;
+	font-family: sans-serif;
+	color: #555;
+	font-size: 1em;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* DELET! - end */
+
+
+/* Accordion (class) styles */
+
+.accordion {
+	margin-top: 23px 0;
+	line-height: 1.6;
+	padding: 0;
+}
+
+.accordion > h3 {
+	position: relative;
+	font-size: 14px;
+	padding: 0 0 0 50px;
+	margin: 0 0 5px 0;
+	cursor: pointer;
+	line-height: 34px;
+	font-family: "opensans", Arial, sans-serif;
+	background: #f1f2f3;
+	color: #333;
+	font-weight: normal;
+}
+
+.accordion > h3::before {
+	content: '+';
+	display: inline-block;
+	position: absolute;
+	width: 34px;
+	height: 100%;
+	left: 0;
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.accordion > h3.opened {
+	color: #378AC4;
+}
+
+.accordion > h3.opened::before {
+	content: '-';
+	line-height: 110%;
+	background: #378AC4;
+}
+
+.accordion > div {
+	height: 0;
+	overflow: hidden;
+}
